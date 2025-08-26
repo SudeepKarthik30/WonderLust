@@ -7,6 +7,7 @@ const listingController = require("../controller/listings.js");
 const multer = require('multer');
 const {storage} = require("../cloudConfig.js");
 const upload = multer({storage});
+const wrapAsync = require("../utils/wrapAsync.js");
 
 // Index route
 router.get("/", wrapAsync(listingController.index));

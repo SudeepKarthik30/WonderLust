@@ -1,6 +1,6 @@
 const { findById } = require("./model/user");
 const {listingSchema , reviewSchema } = require("./script.js");
-const ExpressError = require("./Utils/expressError.js");
+const ExpressError = require("./utils/expressError.js");
 const Listing = require("./model/listing.js")
 const Review = require("./model/reviews.js")
 

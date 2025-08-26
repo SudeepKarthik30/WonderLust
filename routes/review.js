@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router({mergeParams: true});
 const mongoose = require("mongoose");
-const wrapAsync = require("../Utils/wrapAsync.js");
-const ExpressError = require("../Utils/expressError.js");
+const wrapAsync = require("../utils/wrapAsync.js");
+const ExpressError = require("../utils/expressError.js");
 const Reviews = require("../model/reviews.js");
 const listing = require("../model/listing.js");
 const { validateReview, isLoggedIn ,isReviewAuthor } = require("../middleware.js");

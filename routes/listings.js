@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router({mergeParams: true});
-const wrapAsync = require("../Utils/wrapAsync.js");
+const ExpressError = require('./utils/expressError.js');
 const listing = require("../model/listing.js");
 const {isLoggedIn, isOwner , validateListing} = require("../middleware.js");
 const listingController = require("../controller/listings.js");

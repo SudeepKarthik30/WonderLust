@@ -74,7 +74,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.get("/",(req,res)=>{
-   res.render("listings);
+   res.render("listings");
 })
 
 app.use((req,res,next)=>{
